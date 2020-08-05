@@ -1,41 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentValidator;
+using ModernStore.Shared.Entities;
+using System;
 
 namespace ModernStore.Domain.Entities
 {
-    public class Customer
+    public class Customer : Entity
     {
         #region Constructors
         public Customer(string firstName, string lastName, DateTime birthdate, string email, User user)
         {
-            Id = Guid.NewGuid();
             FirstName = firstName;
             LastName = lastName;
             Birthdate = birthdate;
             Email = email;
             User = user;
-            Notificantions = new Dictionary<string, string>();
 
-            if (firstName.Length > 3)
-                Notificantions.Add("FirstName", "Nome inválido");
-            if (lastName.Length > 3)
-                Notificantions.Add("LastName", "Sobrenome inválido");
-            if (email.Length > 3)
-                Notificantions.Add("Email", "Email inválido");
+            new ValidationContract<Customer>(this)
+                .IsRequired(x => x.FirstName, "Nome é obrigatório")
+                .HasMaxLenght(x => x.FirstName, 60, "Nome possuí um máximo de 60 caracteres")
+                .HasMinLenght(x => x.FirstName, 3, "Nome possuí um mínimo de 3 caracteres")
+                .IsRequired(x => x.LastName, "Sobrenome é obrigatório")
+                .HasMaxLenght(x => x.LastName, 60, "Sobrenome possuí um máximo de 60 caracteres")
+                .HasMinLenght(x => x.LastName, 3, "Sobrenome possuí um mínimo de 3 caracteres")
+                .IsEmail(x => x.Email, "E-mail inválido");
+
+
+
         }
         #endregion
 
         #region Properties
-        public Guid Id { get; private set; }
+        //id e gerenciado pela class entity herdada
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public DateTime Birthdate { get; private set; }
         public string Email { get; private set; }
         public User User { get; private set; }
-        public Dictionary<string, string> Notificantions { get; private set; }
         #endregion
 
         #region Methods
