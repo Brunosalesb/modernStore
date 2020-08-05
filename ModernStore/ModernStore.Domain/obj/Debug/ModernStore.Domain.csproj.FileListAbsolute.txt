@@ -1,0 +1,2 @@
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Domain\obj\Debug\ModernStore.Domain.csprojAssemblyReference.cache
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Domain\obj\Debug\ModernStore.Domain.csproj.CoreCompileInputs.cache
