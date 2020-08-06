@@ -10,7 +10,7 @@ namespace ModernStore.Domain.Entities
             Id = Guid.NewGuid();
             Username = username;
             Password = password;
-            Active = false;
+            Active = true;
         }
         #endregion
 
