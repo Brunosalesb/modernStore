@@ -1,4 +1,4 @@
-﻿using FluentValidator;
+﻿using ModernStore.Domain.ValueObjects;
 using ModernStore.Shared.Entities;
 using System;
 
@@ -7,40 +7,34 @@ namespace ModernStore.Domain.Entities
     public class Customer : Entity
     {
         #region Constructors
-        public Customer(string firstName, string lastName, string email, User user)
+        public Customer(Name name, Email email, Document document, User user)
         {
-            FirstName = firstName;
-            LastName = lastName;
+            Name = name;
             Email = email;
+            Document = document;
             User = user;
 
-            new ValidationContract<Customer>(this)
-                .IsRequired(x => x.FirstName, "Nome é obrigatório")
-                .HasMaxLenght(x => x.FirstName, 60, "Nome possuí um máximo de 60 caracteres")
-                .HasMinLenght(x => x.FirstName, 3, "Nome possuí um mínimo de 3 caracteres")
-                .IsRequired(x => x.LastName, "Sobrenome é obrigatório")
-                .HasMaxLenght(x => x.LastName, 60, "Sobrenome possuí um máximo de 60 caracteres")
-                .HasMinLenght(x => x.LastName, 3, "Sobrenome possuí um mínimo de 3 caracteres")
-                .IsEmail(x => x.Email, "E-mail inválido");
-
-
-
+            AddNotifications(name.Notifications);
+            AddNotifications(email.Notifications);
+            AddNotifications(document.Notifications);
         }
         #endregion
 
         #region Properties
         //id e gerenciado pela class entity herdada
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
+        public Name Name { get; private set; }
         public DateTime Birthdate { get; private set; }
-        public string Email { get; private set; }
+        public Email Email { get; private set; }
+        public Document Document { get; private set; }
         public User User { get; private set; }
         #endregion
 
         #region Methods
-        public override string ToString()
+
+        public void Update(Name name, DateTime birthDate)
         {
-            return FirstName + " " + LastName;
+            Name = name;
+            Birthdate = birthDate;
         }
         #endregion
     }
