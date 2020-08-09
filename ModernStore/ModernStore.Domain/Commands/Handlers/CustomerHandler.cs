@@ -1,14 +1,16 @@
 ﻿using FluentValidator;
-using ModernStore.Domain.Commands;
+using ModernStore.Domain.Commands.Inputs;
+using ModernStore.Domain.Commands.Results;
 using ModernStore.Domain.Entities;
 using ModernStore.Domain.Repositories;
+using ModernStore.Domain.Resources;
 using ModernStore.Domain.Services;
 using ModernStore.Domain.ValueObjects;
 using ModernStore.Shared.Commands;
 
-namespace ModernStore.Domain.CommandHandlers
+namespace ModernStore.Domain.Commands.Handlers
 {
-    public class CustomerHandler : Notifiable, ICommandHandler<UpdateCustomerCommand>, ICommandHandler<RegisterCustomerCommand>
+    public class CustomerHandler : Notifiable, ICommandHandler<RegisterCustomerCommand>
     {
         private readonly ICustomerRepository _customerRepository;
         private readonly IEmailService _emailService;
@@ -19,31 +21,13 @@ namespace ModernStore.Domain.CommandHandlers
             _emailService = emailService;
         }
 
-        public void Handle(UpdateCustomerCommand command)
-        {
-            var customer = _customerRepository.GetByUserId(command.Id);
-
-            if (customer == null)
-            {
-                AddNotification("Customer", "Cliente não encontrado");
-                return;
-            }
-
-            var name = new Name(command.FirstName, command.LastName);
-            customer.Update(name, command.BirthDate);
-
-            AddNotifications(customer.Notifications);
-
-            if (IsValid())
-                _customerRepository.Update(customer);
-        }
-
-        public void Handle(RegisterCustomerCommand command)
+        public ICommandResult Handle(RegisterCustomerCommand command)
         {
             //verifica se ja existe o CPF
             if (_customerRepository.DocumentExists(command.Document))
             {
                 AddNotification("Document", "Este CPF já está em uso");
+                return null;
             }
 
             //gera novo cliente
@@ -65,8 +49,12 @@ namespace ModernStore.Domain.CommandHandlers
                 _customerRepository.Save(customer);
 
             //enviar email
-            _emailService.Send(customer.Name.ToString(), customer.Email.Address, "Bem vindo", "");
+            _emailService.Send(customer.Name.ToString(), customer.Email.Address,
+                string.Format(EmailTemplates.WelcomeEmailTitle, customer.Name),
+                string.Format(EmailTemplates.WelcomeEmailBody, customer.Name));
 
+            //retorno
+            return new RegisterCustomerCommandResult(customer.Id, customer.Name.ToString());
         }
     }
 }
