@@ -10,6 +10,8 @@ namespace ModernStore.Domain.Entities
     public class Product : Entity
     {
         #region Constructors
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected Product() { }
         public Product(string title, decimal price, string image, int quantityOnHand)
         {
             Title = title;

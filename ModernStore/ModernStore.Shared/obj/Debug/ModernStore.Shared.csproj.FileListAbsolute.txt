@@ -5,3 +5,4 @@ C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.csproj.CopyComplete
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.dll
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.pdb
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.csprojAssemblyReference.cache

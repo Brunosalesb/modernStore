@@ -8,6 +8,8 @@ namespace ModernStore.Domain.Entities
     public class User : Entity
     {
         #region constructors
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected User() { }
         public User(string username, string password, string confirmPassword)
         {
             Username = username;

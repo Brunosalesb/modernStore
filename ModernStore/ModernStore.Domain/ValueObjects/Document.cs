@@ -9,6 +9,8 @@ namespace ModernStore.Domain.ValueObjects
 {
     public class Document : Notifiable
     {
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected Document() { }
         public Document(string number)
         {
             Number = number;

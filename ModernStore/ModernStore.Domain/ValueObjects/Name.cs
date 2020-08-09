@@ -4,6 +4,8 @@ namespace ModernStore.Domain.ValueObjects
 {
     public class Name : Notifiable
     {
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected Name() { }
         public Name(string firstName, string lastName)
         {
             FirstName = firstName;

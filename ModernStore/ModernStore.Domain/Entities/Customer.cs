@@ -7,6 +7,8 @@ namespace ModernStore.Domain.Entities
     public class Customer : Entity
     {
         #region Constructors
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected Customer() { }
         public Customer(Name name, Email email, Document document, User user)
         {
             Name = name;

@@ -11,6 +11,8 @@ namespace ModernStore.Domain.Entities
     public class OrderItem : Entity
     {
         #region Constructors
+        //por conta do EF, as entidades precisam ter um ctor vazio(uso protected par nao ser corruptivel)
+        protected OrderItem() { }
         public OrderItem(Product product, int quantity)
         {
             Product = product;
