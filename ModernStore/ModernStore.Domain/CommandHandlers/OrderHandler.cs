@@ -43,7 +43,7 @@ namespace ModernStore.Domain.CommandHandlers
             AddNotifications(order.Notifications);
 
             //persiste no banco
-            if (order.IsValid())
+            if (IsValid())
                 _orderRepository.Save(order);
         }
     }
