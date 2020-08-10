@@ -1,4 +1,5 @@
-﻿using ModernStore.Domain.Entities;
+﻿using ModernStore.Domain.Commands.Results;
+using ModernStore.Domain.Entities;
 using System;
 
 namespace ModernStore.Domain.Repositories
@@ -6,8 +7,7 @@ namespace ModernStore.Domain.Repositories
     public interface ICustomerRepository
     {
         Customer Get(Guid id);
-        Customer GetByDocument(string document);
-        Customer GetByUserId(Guid id);
+        GetCustomerCommandResult Get(string username);
         void Update(Customer customer);
         void Save(Customer customer);
         bool DocumentExists(string document);
