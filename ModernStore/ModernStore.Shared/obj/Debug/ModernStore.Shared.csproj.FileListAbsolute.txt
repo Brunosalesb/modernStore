@@ -6,3 +6,10 @@ C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.csproj.CopyComplete
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.dll
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.pdb
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\bin\Debug\ModernStore.Shared.dll
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\bin\Debug\ModernStore.Shared.pdb
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\bin\Debug\FluentValidator.dll
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.csproj.CoreCompileInputs.cache
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.csproj.CopyComplete
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.dll
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Shared\obj\Debug\ModernStore.Shared.pdb

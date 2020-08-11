@@ -24,7 +24,7 @@ namespace ModernStore.Domain.Commands.Handlers
         public ICommandResult Handle(RegisterCustomerCommand command)
         {
             //verifica se ja existe o CPF
-            if (_customerRepository.DocumentExists(command.Document))
+            if (!_customerRepository.DocumentExists(command.Document))
             {
                 AddNotification("Document", "Este CPF já está em uso");
                 return null;
