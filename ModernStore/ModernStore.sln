@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{CE09C1F4-7DC2-42D1-9999-DABE880F9984}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernStore.Api", "ModernStore.Api\ModernStore.Api.csproj", "{A4BC91E0-EBFF-4ECC-B559-73784B9886D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AA2CCDB1-BFEC-4783-B1E5-39EF49A20EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2CCDB1-BFEC-4783-B1E5-39EF49A20EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2CCDB1-BFEC-4783-B1E5-39EF49A20EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BC91E0-EBFF-4ECC-B559-73784B9886D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BC91E0-EBFF-4ECC-B559-73784B9886D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BC91E0-EBFF-4ECC-B559-73784B9886D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BC91E0-EBFF-4ECC-B559-73784B9886D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{314D53A2-893B-4A34-A8DF-E84866362FFB} = {2BE0912A-A72E-4F11-8CC2-8DE69AC14455}
 		{508A3430-960D-4BCF-B500-9969035F05B6} = {2BE0912A-A72E-4F11-8CC2-8DE69AC14455}
 		{AA2CCDB1-BFEC-4783-B1E5-39EF49A20EDF} = {CE09C1F4-7DC2-42D1-9999-DABE880F9984}
+		{A4BC91E0-EBFF-4ECC-B559-73784B9886D9} = {411327D3-4F59-4934-AA60-6A187B7D3D9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76E05AF8-6269-438E-B5BA-1A988871A143}
