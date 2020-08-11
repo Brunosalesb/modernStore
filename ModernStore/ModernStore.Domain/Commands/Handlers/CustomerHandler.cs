@@ -24,7 +24,7 @@ namespace ModernStore.Domain.Commands.Handlers
         public ICommandResult Handle(RegisterCustomerCommand command)
         {
             //verifica se ja existe o CPF
-            if (!_customerRepository.DocumentExists(command.Document))
+            if (_customerRepository.DocumentExists(command.Document))
             {
                 AddNotification("Document", "Este CPF já está em uso");
                 return null;
@@ -44,9 +44,11 @@ namespace ModernStore.Domain.Commands.Handlers
             AddNotifications(user.Notifications);
             AddNotifications(customer.Notifications);
 
+            if (!IsValid())
+                return null;
+
             //inserir no banco
-            if (IsValid())
-                _customerRepository.Save(customer);
+            _customerRepository.Save(customer);
 
             //enviar email
             _emailService.Send(customer.Name.ToString(), customer.Email.Address,

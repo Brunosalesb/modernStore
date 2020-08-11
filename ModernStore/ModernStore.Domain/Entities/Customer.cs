@@ -25,7 +25,7 @@ namespace ModernStore.Domain.Entities
         #region Properties
         //id e gerenciado pela class entity herdada
         public Name Name { get; private set; }
-        public DateTime Birthdate { get; private set; }
+        public DateTime? Birthdate { get; private set; }
         public Email Email { get; private set; }
         public Document Document { get; private set; }
         public User User { get; private set; }

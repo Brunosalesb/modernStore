@@ -48,3 +48,4 @@ C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infr
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.csproj.CopyComplete
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.dll
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.pdb
+C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.Migrations.BirthdateNullable.resources

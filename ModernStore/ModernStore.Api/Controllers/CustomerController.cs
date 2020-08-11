@@ -13,22 +13,25 @@ namespace ModernStore.Api.Controllers
     [Route("customers")]
     public class CustomerController : Controller
     {
-        private readonly IUnitOfWork _iuow;
+        private readonly IUnitOfWork _uow;
         private readonly CustomerHandler _handler;
 
-        public CustomerController(IUnitOfWork iuow, CustomerHandler handler)
+        public CustomerController(IUnitOfWork uow, CustomerHandler handler)
         {
-            _iuow = iuow;
+            _uow = uow;
             _handler = handler;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]RegisterCustomerCommand cmd)
+        public IActionResult Post([FromBody] RegisterCustomerCommand cmd)
         {
             var result = _handler.Handle(cmd);
 
             if (_handler.IsValid())
+            {
+                _uow.Commit();
                 return Ok(result);
+            }
 
             else
                 return BadRequest(_handler.Notifications);
