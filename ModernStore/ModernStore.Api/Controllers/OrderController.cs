@@ -1,32 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ModernStore.Domain.Commands.Handlers;
 using ModernStore.Domain.Commands.Inputs;
-using ModernStore.Domain.Repositories;
 using ModernStore.Infra.Transactions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ModernStore.Api.Controllers
 {
-    [Route("customers")]
-    public class CustomerController : BaseController
+    public class OrderController : BaseController
     {
-        private readonly CustomerHandler _handler;
+        private readonly OrderHandler _handler;
 
-        public CustomerController(IUnitOfWork unitOfWork, CustomerHandler handler) : base(unitOfWork)
+        public OrderController(IUnitOfWork unitOfWork,OrderHandler handler) : base(unitOfWork)
         {
             _handler = handler;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] RegisterCustomerCommand cmd)
+        public async Task<IActionResult> Post([FromBody] RegisterOrderCommand cmd)
         {
             var result = _handler.Handle(cmd);
             return await Response(result, _handler.Notifications);
         }
-
-
     }
 }
