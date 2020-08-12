@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VYhbM92PWs7gQ5dZay40z5kDCSZTfadR5HMBglyOXApcXRQmUfHXGIaWjwdL8jDWSwlpmXbHfcLjH4cPcRF2RQ==",
+  "dgSpecHash": "Y6DMBnEzI4mX9g/tk3AV/OBCPIau7wNEjCzZkSbWpYdE8VpkUUWkiTqcYPrJrkIZ9s8v+V0gnhZWdo7oMx84cQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
+  "projectFilePath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruno\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\fluentvalidator\\1.0.5\\fluentvalidator.1.0.5.nupkg.sha512",

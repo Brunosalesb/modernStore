@@ -8951,11 +8951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
+      "projectUniqueName": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
       "projectName": "ModernStore.Api",
-      "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
+      "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Api\\ModernStore.Api.csproj",
       "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Api\\obj\\",
+      "outputPath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8971,14 +8971,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj": {
-              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj"
+            "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj": {
+              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj"
             },
-            "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj": {
-              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj"
+            "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj": {
+              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj"
             },
-            "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj": {
-              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\teste\\modernStore\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj"
+            "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj": {
+              "projectPath": "C:\\Users\\bruno\\Documents\\Projetos\\modernStore\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj"
             }
           }
         }

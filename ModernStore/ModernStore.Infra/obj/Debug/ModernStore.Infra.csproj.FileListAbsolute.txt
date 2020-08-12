@@ -49,3 +49,10 @@ C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infr
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.dll
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.pdb
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.Migrations.BirthdateNullable.resources
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.AccessControl.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.Permissions.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.AccessControl.xml
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.Permissions.xml
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Infra\obj\Debug\ModernStore.Infra.Migrations.BirthdateNullable.resources

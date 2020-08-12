@@ -38,7 +38,6 @@ C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\De
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\ModernStore.Infra.pdb
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\ModernStore.Infra.dll.config
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\ModernStore.Shared.pdb
-C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\EntityFramework.xml
 C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\Dapper.xml
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\obj\Debug\netcoreapp3.1\ModernStore.Api.csprojAssemblyReference.cache
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\obj\Debug\netcoreapp3.1\ModernStore.Api.AssemblyInfoInputs.cache
@@ -92,3 +91,14 @@ C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\obj\Debug\netcoreapp3.1\ModernStore.Api.dll
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\obj\Debug\netcoreapp3.1\ModernStore.Api.pdb
 C:\Users\bruno\Documents\Projetos\teste\modernStore\ModernStore\ModernStore.Api\obj\Debug\netcoreapp3.1\ModernStore.Api.genruntimeconfig.cache
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\bruno\Documents\Projetos\modernStore\ModernStore\ModernStore.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
